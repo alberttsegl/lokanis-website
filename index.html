@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokanis - Cari Akomodasi Terbaik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="#" class="logo">Lokanis</a>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Jelajah Destinasi</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Tipe Akomodasi</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link promo-link">
+              Promo Spesial <span class="promo-badge"></span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Cek Pesanan</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Jadi Mitra</a></li>
+        </ul>
+
+        <div class="mobile-auth-buttons">
+          <a href="#" class="btn-secondary">Masuk</a>
+          <a href="#" class="btn-primary">Daftar</a>
+        </div>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="#" class="btn-secondary">Masuk</a>
+        <a href="#" class="btn-primary">Daftar</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1 class="hero-heading">Temukan Ruang Nyaman<br>Untuk Setiap Cerita Perjalananmu</h1>
+      <p class="hero-subheading">Cari dan pesan hotel, villa, hingga apartemen dengan harga terbaik dan transparansi penuh.</p>
+
+      <div class="search-container">
+        <form class="search-form">
+          
+          <div class="search-group">
+            <label><i class="fa-solid fa-location-dot icon-green"></i> Destinasi</label>
+            <input type="text" placeholder="Mau menginap ke mana?" required>
+          </div>
+          
+          <div class="search-divider"></div>
+
+          <div class="search-group">
+            <label><i class="fa-solid fa-calendar-days icon-green"></i> Check-in & Out</label>
+            <input type="text" placeholder="Pilih Tanggal" onfocus="(this.type='date')" onblur="(this.type='text')">
+          </div>
+
+          <div class="search-divider"></div>
+
+          <div class="search-group">
+            <label><i class="fa-solid fa-bed icon-green"></i> Kamar & Tamu</label>
+            <input type="text" placeholder="1 Kamar, 2 Tamu">
+          </div>
+
+          <button type="submit" class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i> <span>Cari</span>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="accommodation-section">
+    <div class="section-container">
+      
+      <div class="section-header">
+        <h2 class="section-title">Rekomendasi Ruang Terbaik</h2>
+        <p class="section-subtitle">Pilihan akomodasi terfavorit dengan rating tertinggi dari penjelajah sebelum kamu.</p>
+      </div>
+
+      <div class="cards-grid">
+        
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Hotel</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">The Grand Orchid Resort</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Bandung, Jawa Barat</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 850.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Villa</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Pinewood Alpine Glamping</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Bogor, Jawa Barat</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 1.200.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Apartemen</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Skyline Executive Suite</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Jakarta Pusat, DKI Jakarta</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 950.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Hotel</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Summer Breeze Boutique Stay</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Kuta, Bali</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 650.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Villa</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Cliffside Horizon Infinity Villa</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Uluwatu, Bali</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 3.500.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-image-wrapper">
+            <span class="card-badge">Apartemen</span>
+            <div class="card-image-placeholder">
+              <i class="fa-regular fa-image"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Oakwood Urban Studio</h3>
+            <p class="card-location"><i class="fa-solid fa-location-dot"></i> Surabaya, Jawa Timur</p>
+            <div class="card-footer">
+              <div class="card-price">
+                <span class="price-amount">Rp 500.000</span><span class="price-unit">/malam</span>
+              </div>
+              <a href="#" class="btn-detail">Detail <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="explore-action">
+        <a href="#" class="btn-explore">Jelajahi Akomodasi Lainnya <i class="fa-solid fa-compass"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="global-footer">
+    <div class="footer-wrapper-rounded"> <div class="footer-container">
+        <div class="footer-column brand-info">
+          <a href="#" class="footer-logo">Lokanis</a>
+          <p class="footer-desc">Cari dan pesan hotel, villa, hingga apartemen dengan harga terbaik dan transparansi penuh di seluruh Indonesia.</p>
+          <div class="social-medias">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Perusahaan</h3>
+          <ul class="footer-links">
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jadi Mitra</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Akomodasi</h3>
+          <ul class="footer-links">
+            <li><a href="#">Hotel & Resort</a></li>
+            <li><a href="#">Villa & Glamping</a></li>
+            <li><a href="#">Apartemen & Suite</a></li>
+            <li><a href="#">Promo Spesial</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact-info">
+          <h3 class="footer-title">Hubungi Kami</h3>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-envelope"></i> support@lokanis.id</li>
+            <li><i class="fa-solid fa-phone"></i> +62 21 1234 5678</li>
+            <li><i class="fa-solid fa-location-dot"></i>Indonesia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>&copy; 2026 Lokanis. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../assets/js/index.js"></script>
+</body>
+</html>
