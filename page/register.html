@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Akun Lokanis</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2 family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/register.css">
+</head>
+<body>
+
+  <main class="register-wrapper">
+    
+    <!-- SISI KIRI: Branding Visual (Dihilangkan otomatis di mobile) -->
+    <section class="register-left">
+      <div class="left-content">
+        <a href="index.html" class="brand-logo">Lokanis</a>
+        <div class="visual-badge">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Langkah awal petualanganmu
+        </div>
+        <h1 class="left-heading">Bergabung & Temukan Ruang Kenyamananmu</h1>
+        <p class="left-subheading">Dapatkan akses ke ratusan akomodasi premium, promo eksklusif mingguan, dan kelola pemesanan dengan transparansi penuh.</p>
+    </section>
+
+    <!-- SISI KANAN: Formulir Registrasi -->
+    <section class="register-right">
+      <div class="right-content">
+        
+        <!-- Header Form -->
+        <div class="form-header">
+          <a href="../index.html" class="mobile-logo">Lokanis</a>
+          <h2>Buat Akun Baru</h2>
+          <p>Sudah punya akun? <a href="#" class="link-green">Masuk di sini</a></p>
+        </div>
+
+        <!-- Form Input -->
+        <form id="registerForm" class="register-form" novalidate>
+          
+          <!-- Input Nama Lengkap -->
+          <div class="input-group">
+            <label for="fullName">Nama Lengkap</label>
+            <div class="input-field-wrapper">
+              <i class="fa-regular fa-user field-icon"></i>
+              <input type="text" id="fullName" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+            <span class="error-message">Nama lengkap wajib diisi</span>
+          </div>
+
+          <!-- Input Email -->
+          <div class="input-group">
+            <label for="email">Alamat Email</label>
+            <div class="input-field-wrapper">
+              <i class="fa-regular fa-envelope field-icon"></i>
+              <input type="email" id="email" placeholder="contoh@email.com" required>
+            </div>
+            <span class="error-message">Masukkan alamat email yang valid</span>
+          </div>
+
+          <!-- Input Password -->
+          <div class="input-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-field-wrapper">
+              <i class="fa-solid fa-lock field-icon"></i>
+              <input type="password" id="password" placeholder="Minimal 8 karakter" required>
+              <button type="button" id="togglePassword" class="btn-toggle-password" aria-label="Lihat password">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <span class="error-message">Kata sandi minimal berisi 8 karakter</span>
+          </div>
+
+          <!-- Checkbox Persetujuan -->
+          <div class="terms-group">
+            <input type="checkbox" id="agreeTerms" required>
+            <label for="agreeTerms">Saya menyetujui <a href="#" class="link-green">Syarat & Ketentuan</a> serta <a href="#" class="link-green">Kebijakan Privasi</a> Lokanis.</label>
+          </div>
+
+          <!-- Tombol Submit -->
+          <button type="submit" class="btn-submit-register">
+            Daftar Sekarang <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../assets/js/register.js"></script>
+</body>
+</html>
