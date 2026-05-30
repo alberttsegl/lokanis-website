@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin - Lokanis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="../index.html" class="logo">Lokanis<span class="admin-badge">Admin</span></a>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Jelajah Destinasi</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Tipe Akomodasi</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link promo-link">
+              Promo Spesial <span class="promo-badge"></span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Cek Pesanan</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Jadi Mitra</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">Admin</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-buttons">
+        <span class="admin-profile"><i class="fa-solid fa-circle-user"></i> Admin Panel</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-workspace">
+    <section class="table-section">
+      <h1 class="table-title">Data User Terdaftar (Tamu Hotel)</h1>
+      
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Lengkap</th>
+              <th>Akomodasi Dipesan</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Budi Santoso</td>
+              <td>The Grand Orchid Resort</td>
+              <td><span class="badge bg-success">Diterima</span></td>
+              <td>
+                <button class="btn-sm btn-primary btn-view" data-nama="Budi Santoso" data-hotel="The Grand Orchid Resort" data-kamar="Deluxe King Room">
+                  <i class="fa-regular fa-eye"></i> MATA
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Siti Aminah</td>
+              <td>Pinewood Alpine Glamping</td>
+              <td><span class="badge bg-warning text-dark">Pending</span></td>
+              <td>
+                <button class="btn-sm btn-primary btn-view" data-nama="Siti Aminah" data-hotel="Pinewood Alpine Glamping" data-kamar="Luxury Tent Standard">
+                  <i class="fa-regular fa-eye"></i> MATA
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ridwan M.T.</td>
+              <td>Skyline Executive Suite</td>
+              <td><span class="badge bg-success">Diterima</span></td>
+              <td>
+                <button class="btn-sm btn-primary btn-view" data-nama="Ridwan M.T." data-hotel="Skyline Executive Suite" data-kamar="Penthouse 2 Bedroom">
+                  <i class="fa-regular fa-eye"></i> MATA
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-legend">
+        <p><strong>Keterangan:</strong></p>
+        <ul>
+          <li><span class="badge bg-success">Diterima</span> = Badge Hijau (bg-success)</li>
+          <li><span class="badge bg-warning text-dark">Pending</span> = Badge Kuning (bg-warning text-dark)</li>
+          <li><span class="btn-sm btn-primary-example"><i class="fa-regular fa-eye"></i> MATA</span> = Tombol kecil biru (btn-sm btn-primary) icon mata/Detail</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="detailModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Detail User / Tamu</h3>
+        <button id="closeModalCross" class="btn-close-cross">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="info-row">
+          <span class="info-label">Nama Lengkap</span>
+          <span class="info-value" id="modalNama">: -</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Asal Penginapan</span>
+          <span class="info-value" id="modalHotel">: -</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Tipe Kamar</span>
+          <span class="info-value" id="modalKamar">: -</span>
+        </div>
+
+        <div class="modal-alert">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Jadwal check-in otomatis akan diinformasikan via email.</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModalBtn" class="btn-modal-close">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>
